@@ -24,7 +24,7 @@
 
         <FormItem 
         label="Номер телефона (начиная с 7)*" 
-        error-text="введите номер в указанном формате"
+        error-text="Введите номер в указанном формате"
         :error="$v.form.phone.$dirty && !$v.form.phone.phoneValidator"
         v-model.trim="form.phone" />
 

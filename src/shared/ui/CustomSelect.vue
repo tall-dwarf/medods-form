@@ -14,7 +14,7 @@ export default {
     props: {
         data: Array,
         value: {
-            type: String || Array,
+            type: [String, Array],
         },
         multiple: {
             default: false,

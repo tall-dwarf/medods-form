@@ -16,7 +16,14 @@ export default {
 </script>
 
 <style lang="scss">
-html { overflow: hidden; }
+@import url("./assets/fonts/montserrat.css");
+*{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
 .wrapper{
   padding: 5% 0px;
 }
