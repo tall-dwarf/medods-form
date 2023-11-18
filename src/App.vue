@@ -1,28 +1,45 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="wrapper">
+    <CreateSlider />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CreateSlider from "./entities/client/ui/CreateSlider.vue";
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: { CreateSlider },
+
+  methods: {
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+html { overflow: hidden; }
+.wrapper{
+  padding: 5% 0px;
+}
+.error {
+  color: red;
+}
+
+.form {
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+
+  &__btn {
+    background-color: rgb(84, 105, 212);
+    padding: 10px;
+    border: 0px;
+    cursor: pointer;
+    color: #fff;
+  }
 }
 </style>
